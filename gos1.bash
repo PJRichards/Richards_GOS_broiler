@@ -32,7 +32,8 @@ code/mothur/mothur code/get_betadiversity.batch
 code/mothur/mothur code/get_differential_OTUs.batch
 
 # draw figure S1 
-# inverse Simpson plot
+# alpha diversity plots
+# richness plot
 # Bray-Curtis ordination
  code/draw_figS1_diversity.R
 
@@ -50,22 +51,23 @@ code/mothur/mothur code/get_repfasta.batch
 # ileal IL10, IL17A, IL17F
 draw_fig3_cytokine_exp_log.R
 
-# draw figure S2 indicating:
+# draw figure S3 indicating:
 # relationship of ileal and cecal cytokines
 # IL17A vs IL10
 # IL17F vs IL10
 # IL17F vs IL17A
-draw_figS4_cytokine_corr.R
+draw_figS3_cytokine_corr.R
 
-# draw figure 3:
+# draw figure S4 indicating:
 # histology
 draw_figS4_histo.R
 
 # draw figure 4
-# system
+# systems
 draw_fig4_mass_cor.R
 
 # draw figure 5
+# competitive index
 draw_fig5_ci.R
 
 # draw rarefaction curves
