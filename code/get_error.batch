@@ -1,0 +1,6 @@
+set.current(inputdir=data/mothur, outputdir=data/mothur)
+get.groups(count=gos1.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=gos1.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=gos1.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, groups=mock)
+rename.file(input=gos1.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, new=gos1.trim.contigs.good.unique.good.filter.unique.precluster.mock.fasta)
+rename.file(input=gos1.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, new=gos1.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.mock.count_table)
+rename.file(input=gos1.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, new=gos1.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.mock.taxonomy)
+seq.error(fasta=gos1.trim.contigs.good.unique.good.filter.unique.precluster.mock.fasta, count=gos1.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.mock.count_table, reference=data/references/nupos.fasta, aligned=F)
