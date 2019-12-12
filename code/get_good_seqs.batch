@@ -1,5 +1,5 @@
 set.current(inputdir=data/mothur, outputdir=data/mothur)
-make.contigs(file=data/raw/gos1.files, inputdir=data/raw/, processors=12)
+make.contigs(file=data/reads/broiler_gos.files, inputdir=data/reads/, processors=12)
 screen.seqs(fasta=current, group=current, maxambig=0, maxlength=275, maxhomop=8)
 unique.seqs(fasta=current)
 count.seqs(name=current, group=current)
